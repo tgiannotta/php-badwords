@@ -51,10 +51,24 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
     $rimpiazzo= str_replace($censura, $parola_censurata, $speach);
 
 
-    echo $rimpiazzo;
+   
 
 ?>
 
+<!-- Stampo il nuovo paragrafo e la sua lunghezza aggiornato dopo le censure -->
+
+<h4>Questo è il discorso censurato:</h4>
+<p>
+    <?php 
+        echo $rimpiazzo;
+    ?>
+</p>
+
+<h4>Il nuovo testo, ha questa lunghezza: 
+<?php 
+    $rimpiazzo_lenght= strlen($rimpiazzo);
+    echo $rimpiazzo_lenght;
+?></h4>
 
 </body>
 </html>
